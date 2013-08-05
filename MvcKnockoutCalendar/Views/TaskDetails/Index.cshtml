@@ -1,0 +1,57 @@
+@model IEnumerable<MvcKnockoutCalendar.Models.TaskDetail>
+
+@{
+    ViewBag.Title = "All Tasks";
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            Title
+        </th>
+        <th>
+            Details
+        </th>
+        <th>
+            Starts
+        </th>
+        <th>
+            Ends
+        </th>
+        <th>
+            ParentTask
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+        <td>
+			@item.Title
+        </td>
+        <td>
+			@item.Details
+        </td>
+        <td>
+			@String.Format("{0:g}", item.Starts)
+        </td>
+        <td>
+			@String.Format("{0:g}", item.Ends)
+        </td>
+        <td>
+			@Html.DisplayTextFor(_ => item.ParentTask).ToString()
+        </td>
+    </tr>
+}
+
+</table>
+
+

@@ -1,0 +1,26 @@
+@model MvcKnockoutCalendar.Models.TaskDay
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>TaskDay</legend>
+
+    <div class="display-label">Day</div>
+    <div class="display-field">@String.Format("{0:g}", Model.Day)</div>
+
+    <div class="display-label">Tasks</div>
+    <div class="display-field">@(Model.Tasks == null ? "None" : Model.Tasks.Count.ToString())</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+
