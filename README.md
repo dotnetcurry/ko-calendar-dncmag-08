@@ -7,6 +7,6 @@ This code is a part of the article **Building a Task Calendar using Knockout JS 
 
 * Author  : [Sumit Maitra](http://www.dotnetcurry.com/Author.aspx?AuthorName=Sumit+Maitra)
 * Twitter : [@sumitkm](http://www.twitter.com/sumitkm)
-* Date    : June 2013
+* Date    : September 2013
 * WebSite : [DNC Magazine](http://www.dncmagazine.com)
 * GitHub  : [Repository Here](https://github.com/dotnetcurry/ko-calendar-dncmag-08)
