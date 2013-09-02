@@ -1,7 +1,7 @@
 Building a Task Calendar using Knockout JS and ASP.NET WebAPI
 ====================
 
-A project showing how to create a Task Calendar in an ASP.NET MVC using KnockoutJS and BootStrap styling
+A project showing how to create a Task Calendar in an ASP.NET MVC application using KnockoutJS and BootStrap styling
 
 This code is a part of the article **Building a Task Calendar using Knockout JS and ASP.NET WebAPI** in [DNC Magazine's](http://www.dotnetcurry.com/magazine/dnc-magazine-issue8.aspx) Eighth Issue. This magazine is absolutely free. [Subscribe now.](http://www.dotnetcurry.com/magazine)
 
